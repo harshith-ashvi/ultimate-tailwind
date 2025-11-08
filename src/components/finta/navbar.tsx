@@ -10,7 +10,7 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-between my-2">
+    <div className="my-2 flex items-center justify-between">
       <Link href="/finta">
         <Image width={68} height={30} src="/finta-logo.svg" alt="finta-logo" />
       </Link>
@@ -19,14 +19,14 @@ export default function Navbar() {
           <Link
             href={navLink.href}
             key={navLink.label}
-            className="text-neutral-800 font-medium text-sm hover:text-neutral-600 transition duration-200 "
+            className="text-sm font-medium text-neutral-800 transition duration-200 hover:text-neutral-600"
           >
             {navLink.label}
           </Link>
         ))}
         <Link
           href="/finta"
-          className="bg-[#2579F4] py-2 px-3 text-white rounded-md font-semibold text-sm shadow-lg text-shadow-md tracking-wide hover:bg-[#2262c7]"
+          className="rounded-md bg-[#2579F4] px-3 py-2 text-sm font-semibold tracking-wide text-white shadow-lg text-shadow-md hover:bg-[#2262c7]"
         >
           Get started
         </Link>

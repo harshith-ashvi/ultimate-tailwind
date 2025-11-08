@@ -3,10 +3,10 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="px-4 py-2 w-full mx-auto flex flex-col items-center my-12">
+    <div className="mx-auto my-12 flex w-full flex-col items-center px-4 py-2">
       <Link
         href="/finta"
-        className="flex items-center gap-1 tracking-tight bg-[#1e1f250a] w-fit rounded-2xl my-8 px-2 py-1 font-semibold text-xs text-neutral-800 hover:bg-[#1e1f251f] cursor-pointer border-neutral-200 border transition duration-200"
+        className="my-8 flex w-fit cursor-pointer items-center gap-1 rounded-2xl border border-neutral-200 bg-[#1e1f250a] px-2 py-1 text-xs font-semibold tracking-tight text-neutral-800 transition duration-200 hover:bg-[#1e1f251f]"
       >
         <p>We're hiring Founding Ruby Engineers</p>
         <svg width="16" height="16" fill="none">
@@ -20,28 +20,28 @@ function Hero() {
           ></path>
         </svg>
       </Link>
-      <div className="max-w-xl mt-2">
-        <h1 className="text-6xl text-center font-medium tracking-tighter">
+      <div className="mt-2 max-w-xl">
+        <h1 className="text-center text-6xl font-medium tracking-tighter">
           Magically simplify accounting and taxes
         </h1>
-        <p className="text-center text-neutral-600 font-medium text-normal my-4">
+        <p className="text-normal my-4 text-center font-medium text-neutral-600">
           Automated bookkeeping, effortless tax filing, real‑time insights.{" "}
           <br />
           Set up in 10 mins. Back to building by 11:01pm.
         </p>
 
-        <div className="flex items-center justify-center gap-2 my-6">
+        <div className="my-6 flex items-center justify-center gap-2">
           <Link
             href="/finta"
-            className="bg-[#2579F4] py-2 px-3 text-white rounded-md font-semibold text-sm shadow-lg text-shadow-md tracking-wide hover:bg-[#2262c7]"
+            className="rounded-md bg-[#2579F4] px-3 py-2 text-sm font-semibold tracking-wide text-white shadow-lg text-shadow-md hover:bg-[#2262c7]"
           >
             Get started
           </Link>
           <Link
             href="/finta"
-            className="flex items-center gap-1 hover:bg-[#1e1f251f] transition duration-200 p-2 rounded-md"
+            className="flex items-center gap-1 rounded-md p-2 transition duration-200 hover:bg-[#1e1f251f]"
           >
-            <p className="font-semibold text-sm">Pricing</p>
+            <p className="text-sm font-semibold">Pricing</p>
             <svg width="16" height="16" fill="none">
               <path
                 stroke="#1E1F25"
@@ -55,7 +55,7 @@ function Hero() {
           </Link>
         </div>
 
-        <p className="text-neutral-400 text-xs text-center">
+        <p className="text-center text-xs text-neutral-400">
           For US-based C-Corps, LLCs, and PBCs.
         </p>
       </div>
